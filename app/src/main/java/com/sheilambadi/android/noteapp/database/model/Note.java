@@ -1,4 +1,4 @@
-package com.sheilambadi.android.noteapp.database;
+package com.sheilambadi.android.noteapp.database.model;
 
 public class Note {
     public static final String TABLE_NAME = "notes";
