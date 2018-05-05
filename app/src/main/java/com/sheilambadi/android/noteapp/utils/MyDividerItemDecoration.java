@@ -24,7 +24,7 @@ public class MyDividerItemDecoration extends RecyclerView.ItemDecoration {
     private Context context;
     private int margin;
 
-    public MyDividerItemDecoration(int orientation, Context context, int margin) {
+    public MyDividerItemDecoration(Context context, int orientation, int margin) {
         this.context = context;
         this.margin = margin;
         final TypedArray a = context.obtainStyledAttributes(ATTRS);
