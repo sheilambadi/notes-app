@@ -40,10 +40,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
         coordinatorLayout = findViewById(R.id.coordinator_layout);
         recyclerView = findViewById(R.id.recycler_view);
@@ -168,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
         builder.show();
     }
 
+
     /**
      * Shows alert dialog with EditText options to enter / edit
      * a note.
@@ -227,6 +226,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     /**
      * Toggling list and empty notes view
      */
